@@ -1,0 +1,65 @@
+:root {
+  --font-1: "Pacifico", cursive;
+  --font-2: "Righteous", cursive;
+  --font-3: "PT Sans Caption", sans-serif;
+}
+
+body {
+  font-family: var(--font-3);
+  background-color: #f7ecde;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-1);
+  margin: 4rem auto;
+  position: relative;
+  width: fit-content;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+h1:hover::before {
+  height: 70%;
+}
+
+hr {
+  border: 1px dotted black;
+  opacity: 1;
+}
+
+.icon h2 {
+  background-image: linear-gradient(to right, #3fa55c, #b2ab49);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: var(--font-2);
+  margin: 2rem auto;
+  color: transparent;
+  position: relative;
+  width: fit-content;
+}
+
+form button {
+  background-color: #bb4120 !important;
+  color: white;
+  border: none !important;
+  outline: none;
+  padding: 0.5rem 3rem !important;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #9c361a !important;
+}
