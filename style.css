@@ -57,9 +57,24 @@ form button {
   padding: 0.5rem 3rem !important;
   margin: 1rem 0;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 form button:hover {
   background-color: #9c361a !important;
+}
+
+form button:active {
+  transform: scale(0.95);
+}
+
+#tableBody .delete {
+  background-color: #bb4120 !important;
+  color: white;
+  border: none !important;
+  outline: none;
+  padding: 0.5rem 1rem !important;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
